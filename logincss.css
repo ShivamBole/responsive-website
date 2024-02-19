@@ -1,0 +1,70 @@
+body{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+.log1{
+    background-color: #d1cecc;
+    display: flex;
+    margin: auto;
+    margin-top: 12%;
+    padding: 20px;
+    justify-content: space-evenly;
+    height: 374px;
+    width: 458px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 57px 48px
+
+}
+.log1 form{
+    width: 80%;
+}
+.log1 form div i{
+ background: #d69659;
+ padding: 12px;
+ margin: 2px;
+ border-radius: 5px 0px 0px 5px;
+ box-shadow: 0px 0px 3px 0px
+}
+.log1 form div:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.log1 form div:first-child{
+  
+    margin: 10px 0px;
+}
+.log1 form div input{
+    width: 80%;
+    border: none;
+    padding: 12px;
+    border-radius: 0px 5px 5px 0px;
+    margin: 2px;
+    box-shadow: 0px 0px 3px 0px
+}
+.log1 form div:nth-child(4){
+  text-align: center;
+  
+}
+.log1 #submit{
+    margin-top: 14%;
+    width: 69%;
+    border: none;
+    padding: 12px;
+    border-radius:5px ;
+}
+.log1 form div input:hover{
+  background-color: #d1cecc;
+}
+.log1 .cross a i{
+    float: right;
+    margin-right: 5px;
+    color: black;
+}
+.log1 .cross a i:hover{
+    color: #d24747;
+}
+.log1 .cross{
+    margin-top: -10px;
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <title>musiera</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="inps">
+          <div class="logo">
+            <div>
+            <img
+              src="images\360_F_483177001_2f5bi2HdCXfqKuMoHwbfkCWhCFa4k3pX.jpg"
+              alt="logo">
+            </div>
+              <div class="anc2">
+                <ul>
+                  <li> <a href="login.html.html"><i
+                        class="fa fa-sign-in"></i>Login/SignUp</a></li>
+                </ul>
+              </div>
+          </div>
+        
+           <div class="block">
+          <form action="">
+            <div class="add1">
+              <i class="fa fa-map-marker-alt"></i> 
+              <input type="text" name="addrs" id="add1" placeholder="choose the location"  onkeyup="onBoth()"></input>
+            </div>
+            <div  class="sear1" id="rav">
+              <input type="text" name="search" id="sear1"
+                placeholder="search which musical product you want to buy?" onkeyup="onBoth()"><i class="fa fa-microphone"></i><i
+                  class="fa fa-search"></i>
+              </input>
+            </div>
+          </form>
+          </div>
+            <div class="anc1">
+              <ul>
+                <li>
+                  <a href="google.com"><i class="fa fa-bullhorn"></i>Advertiese</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-line-chart"></i>Free Listing</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-bell"></i></a>
+                </li>
+                <li> <a href="loginhtml.html"><i
+                      class="fa fa-sign-in"></i>Login/SignUp</a></li>
+              </ul>
+            </div>
+         
+        </div>
+        <div class="variaty">
+          <ul>
+            <li>
+              <div class="dropdown">
+                <button value="JD expert"> JD expert<i class="fa fa-chevron-down"></i>
+                  <div class="dropdown-content">
+                    <a href="#"><i class="fa fa-bars"></i> All Categories</a>
+                    <a href="#"><i class="fa fa-heartbeat"></i> Health Medical</a>
+                    <a href="#"><i class="fa fa-lightbulb"></i>Electrical Supplies</a>
+                    <a href="#"><I CLASS="fa fa-industry"></I>Industrial Machinery</a>
+                  </div>
+              </div></button>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button value="B2B">B2B<i class="fa fa-chevron-down"></i>
+                  <div class="dropdown-content">
+                    <a href="#"><i class="fa fa-bars"></i> All Categories</a>
+                    <a href="#"><i class="fa fa-heartbeat"></i> Health Medical</a>
+                    <a href="#"><i class="fa fa-lightbulb"></i>Electrical Supplies</a>
+                    <a href="#"><I CLASS="fa fa-industry"></I>Industrial Machinery</a>
+                  </div>
+              </div></button>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button value="Best Estate">Best Estate<i class="fa fa-chevron-down"></i>
+                  <div class="dropdown-content">
+                    <a href="#"><i class="fa fa-bars"></i> All Categories</a>
+                    <a href="#"><i class="fa fa-heartbeat"></i> Health Medical</a>
+                    <a href="#"><i class="fa fa-lightbulb"></i>Electrical Supplies</a>
+                    <a href="#"><I CLASS="fa fa-industry"></I>Industrial Machinery</a>
+                  </div>
+              </div></button>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button value="Popular Categories"> Popular Categories<i class="fa fa-chevron-down"></i>
+                  <div class="dropdown-content">
+                    <a href="#"><i class="fa fa-bars"></i> All Categories</a>
+                    <a href="#"><i class="fa fa-heartbeat"></i> Health Medical</a>
+                    <a href="#"><i class="fa fa-lightbulb"></i>Electrical Supplies</a>
+                    <a href="#"><I CLASS="fa fa-industry"></I>Industrial Machinery</a>
+                  </div>
+              </div></button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- </div> -->
+  </header>
+
+  <div class="showcase">
+    <!-- <img src="imagelogin2\image 20.png" alt="img1" id="img1"> -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images\vinatabla.jpg" alt="image one" id="img2">
+        <!-- <div class="text">Caption Text</div> -->
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images\Tabla.jpg" id="img3">
+        <!-- <div class="text">Caption Two</div> -->
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images\keyboard.jpg" alt="image three" id="img3">
+        <!-- <div class="text">Caption Three</div> -->
+      </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- --------------------------------- main program-----===================----- -->
+  <div class="main">
+    <div class="header1">
+      <div class="slidshow">
+        <h1>High Celled Product On Our Website </h1>
+      </div>
+      <div class="buttons">
+        <select id="sort" onclick= "inord()">
+          <option label="Sort By"></option>
+          <option>5 or 4 Star</option>
+          <option>high Price</option>
+          <option>Low Price</option>
+        </select>
+        <select  value=" Top-Search" id="search" onclick="topSearch()">
+          <option>Top-Search</option>
+          <option>Tabla</option>
+          <option>Harmonium</option>
+          <option>Vina</option>
+          <option>Guitar</option>
+          <option>Dholki</option>
+        </select>
+        <select name="Top-Rated" valu="Top-Rated" id="sort">
+          <option>Top-Rated</option>
+          <option>Low Price</option>
+          <option>high Price</option>
+          <option>4 Star</option>
+          <option>New</option>
+          <option>Second Hand</option>
+        </select>
+        <select name="ME Varified" value="ME Varified" id="sort">
+          <option>ME Varified</option>
+          <option>Highly Celled</option>
+          <option>Low Price</option>
+          <option>high Price</option>
+          <option>4 Star</option>
+          <option>5 Star</option>
+        </select>
+      </div>
+    </div>
+   <div class="container1" id="mainContainer">
+<div class="product">
+        <div class="img">
+          <img src="images\handtabla.jpg" alt="product img">
+        </div>
+        <div class="info">
+          <div  class="namep">
+             <h2>Harmonium</h2>
+          </div>
+          <div>
+            <label for="rate"> RATING:</label>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+          </div>
+          <div class="price">
+            <label for="PRS">PRICE:</label>
+            <span id ="PRS">3000 Rs</span>
+          </div>
+          <div>
+            <button type="button"><i class="fas fa-phone"></i> 9038309840</button>
+            <button type="link"><i class="fa fa-message"></i> send msg</button>
+          </div>
+          <div class="address" >
+            <address>At. Mutijapur,Tq. Murtijapur,Dist.akola,Po.Murtizapur</address>
+          </div>
+        </div>
+        <div class="like" id="product1">
+          <button class="like-button" data-product-id="1"> &#x2665;</button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img">
+          <img src="images\handtabla.jpg" alt="product img">
+        </div>
+        <div class="info" >
+          <div class="namep">
+            <h2>Harmonium</h2>
+          </div>
+          <div>
+            <label for="rate"> RATING:</label>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+          </div>
+          <div class="price">
+            <label for="PRS">PRICE:</label>
+            <span id ="PRS">3000 Rs</span>
+          </div>
+          <div>
+            <button type="button"><i class="fas fa-phone"></i> 9038309840</button>
+            <button type="link"><i class="fa fa-message"></i> send msg</button>
+          </div>
+          <div class="address" >
+            <address>At. Mutijapur,Tq. Murtijapur,Dist.akola,Po.Murtizapur</address>
+          </div>
+        </div>
+        <div class="like" id="product2">
+          <button class="like-button" data-product-id="2">&#x2665;</button>
+        </div>
+      </div>
+       <div class="product">
+        <div class="img">
+          <img src="images\handtabla.jpg" alt="product img">
+        </div>
+        <div class="info" >
+          <div  class="namep">
+            <h2>Harmonium</h2>
+          </div>
+          <div>
+            <label for="rate"> RATING:</label>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+          </div>
+          <div class="price">
+            <label for="PRS">PRICE:</label>
+            <span id ="PRS">3000 Rs</span>
+          </div>
+          <div>
+            <button type="button"><i class="fas fa-phone"></i> 9038309840</button>
+            <button type="link"><i class="fa fa-message"></i> send msg</button>
+          </div>
+          <div class="address" >
+            <address>At. Mutijapur,Tq. Murtijapur,Dist.akola,Po.Murtizapur</address>
+          </div>
+        </div>
+        <div class="like" id="product2">
+          <button class="like-button" data-product-id="3"> &#x2665;</button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="img">
+          <img src="images\handtabla.jpg" alt="product img">
+        </div>
+        <div class="info">
+          <div class="namep">
+            <h2>Harmonium</h2>
+          </div>
+          <div>
+            <label for="rate"> RATING:</label>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+            <i class="fas fa-star" id="rate"></i>
+          </div>
+          <div class="price">
+            <label for="PRS">PRICE:</label>
+            <span id ="PRS">3000 Rs</span>
+          </div>
+          <div>
+            <button type="button"><i class="fas fa-phone"></i> 9038309840</button>
+            <button type="link"><i class="fa fa-message"></i> send msg</button>
+          </div>
+          <div class="address" >
+            <address>At. Mutijapur,Tq. Murtijapur,Dist.akola,Po.Murtizapur</address>
+          </div>
+        </div>
+        <div class="like" id="product2">
+          <button class="like-button" data-product-id="3"> &#x2665;</button>
+        </div>
+      </div> 
+    </div>
+    
+    </div>
+  
+  <footer>
+    <div class="footer1">
+      <div class="copy">
+        <h4>Copy Right &copy 2017 </h4>
+      </div>
+      <div class="details">
+        <div>
+          <ul>
+            <li>Our Services</li>
+            <li>Our Services</li>
+            <li>Our Services</li>
+            <li>Our Services</li>
+            <li>Our Services</li>
+            <li>Our Services</li>
+            <li>Our Services</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum.
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur..</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Lorem ipsu.</li>
+            <li>Lorem ipsum dolor </li>
+            <li>Lorem ipsum dolor sit amet..</li>
+            <li>Lorem ipsum dolor, sit amet cor adipisicing..</li>
+            <li>Lorem ipsum dolor sit..</li>
+            <li>Lorem, ipsum.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Add more products as needed -->
+
+
+  <script src="mywebsite.js">
+
+  
+  </script>
+  
+
+
+</body>
+
+</html>
